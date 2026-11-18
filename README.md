@@ -101,3 +101,7 @@ No es necesario ejecutar `npm install` ni instalar dependencias.
 ---
 
 **Proyecto:** El Pibble Chef
+
+# Comentario de agradecimiento
+
+Disfrutad del proyecto tio y muchas gracias por ver :)
