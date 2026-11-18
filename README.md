@@ -1,4 +1,4 @@
-# El Pibble Chef
+# Sazón & Mesa
 
 Sitio web promocional para un servicio de chefs y meseros a domicilio, pensado para eventos privados, celebraciones y reuniones especiales.
 
@@ -25,31 +25,27 @@ El proyecto no utiliza frameworks ni requiere instalar paquetes para ejecutarse.
 ## 📁 Estructura del proyecto
 
 ```text
-El Pibble Chef/
-|
-|-- Index.html
-|-- styles.css
-|-- main.js
-|-- gen_images.py
-|-- README.md
-|-- README.txt
-|
-|-- images/
-    |-- Logo.jpg
-    |
-    |-- equipo/
-    |   |-- chef1.webp
-    |   |-- chef2.webp
-    |   |-- mesero1.webp
-    |   |-- mesero2.webp
-    |
-    |-- eventos/
-        |-- boda.svg
-        |-- cena-gala.svg
-        |-- cumpleanos.svg
-        |-- corporativo.svg
-        |-- brunch.svg
-        |-- aniversario.svg
+Sazon_y_Mesa/
+├── Index.html
+├── styles.css
+├── main.js
+├── gen_images.py
+├── README.md
+├── README.txt
+└── images/
+    ├── hero.svg
+    ├── equipo/
+    │   ├── alejandro.svg
+    │   ├── valeria.svg
+    │   ├── daniel.svg
+    │   └── sofia.svg
+    └── eventos/
+        ├── boda.svg
+        ├── cena-gala.svg
+        ├── cumpleanos.svg
+        ├── corporativo.svg
+        ├── brunch.svg
+        └── aniversario.svg
 ```
 
 ## 📜 Licencia
@@ -63,7 +59,7 @@ Antes de permitir que otras personas reutilicen, modifiquen o distribuyan el pro
 ### Requisitos
 
 - [Git](https://git-scm.com/) instalado.
-- Un navegador moderno, como Brave, Chrome, Firefox, etc.
+- Un navegador moderno, como Brave, Chrome, Firefox o Edge.
 
 ### Pasos
 
@@ -100,4 +96,4 @@ No es necesario ejecutar `npm install` ni instalar dependencias.
 
 ---
 
-**Proyecto:** El Pibble Chef
+**Proyecto:** Sazón & Mesa

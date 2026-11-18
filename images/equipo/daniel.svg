@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 750">
+<defs><linearGradient id="p" x2="1" y2="1"><stop stop-color="#211438"/><stop offset="1" stop-color="#3D5862"/></linearGradient></defs>
+<rect width="600" height="750" fill="url(#p)"/><circle cx="500" cy="120" r="150" fill="#fff" opacity=".08"/>
+<path d="M45 750 Q55 550 300 550 Q545 550 555 750" fill="#20102E"/>
+<path d="M210 330 Q175 170 300 165 Q430 170 395 350 L420 500 Q300 600 180 500Z" fill="#211B26"/>
+<ellipse cx="300" cy="380" rx="112" ry="145" fill="#C98D6D"/>
+<path d="M190 365 Q175 220 300 220 Q425 220 410 365 Q380 285 300 290 Q220 285 190 365" fill="#211B26"/>
+<circle cx="260" cy="390" r="8" fill="#24152E"/><circle cx="340" cy="390" r="8" fill="#24152E"/>
+<path d="M265 455 Q300 475 335 455" fill="none" stroke="#8B4F50" stroke-width="7" stroke-linecap="round"/>
+<path d="M255 565 L300 630 L345 565" fill="#FFF"/>
+<text x="300" y="690" text-anchor="middle" fill="#FFF7F0" font-family="Arial" font-size="25" font-weight="bold">Daniel Pereira</text></svg>
