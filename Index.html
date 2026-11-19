@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>El Pibble Chef</title>
+    <meta name="description" content="Chefs y meseros a domicilio para tus eventos. Paquetes Pro, Normal y Básico.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Syne:wght@700;800&display=swap">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- ===== ENCABEZADO + MENÚ DESPLEGABLE ===== -->
+    <header class="top" id="top">
+        <div class="wrap top-row">
+            <a class="brand" href="#inicio">El Pibble <span></span> Chef</a>
+            <div class="menu">
+                <button class="menu-btn" id="menu-btn" type="button" aria-expanded="false" aria-controls="menu-panel">
+                    Menú
+                    <svg width="12" height="8" viewBox="0 0 12 8" fill="none" aria-hidden="true">
+                        <path d="M1 1.5l5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <nav class="menu-panel" id="menu-panel" aria-label="Secciones" hidden>
+                    <a href="#servicios">Servicios</a>
+                    <a href="#equipo">Nuestro equipo</a>
+                    <a href="#eventos">Eventos realizados</a>
+                    <a href="#contacto">Reservar</a>
+                    <hr>
+                    <a href="#terminos">Términos y condiciones</a>
+                    <a href="#privacidad">Política de privacidad</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- ===== PORTADA ===== -->
+        <section class="hero" id="inicio">
+            <div class="wrap hero-grid">
+                <div class="hero-copy">
+                    <p class="pill">Chefs y meseros a domicilio</p>
+                    <h1>La cocina de autor llega a tu evento.</h1>
+                    <p class="lead">Dos chefs y dos meseros profesionales cocinan y sirven en tu casa, tu salón o donde
+                        tú elijas. Tú solo recibes a tus invitados.</p>
+                    <div class="hero-actions">
+                        <a class="btn btn-primary" href="#servicios">Ver servicios</a>
+                        <a class="btn btn-ghost" href="#equipo">Conocer al equipo</a>
+                    </div>
+                    <ul class="hero-facts">
+                        <li><strong>2</strong> chefs</li>
+                        <li><strong>2</strong> meseros</li>
+                        <li>Desde <strong>250 USD</strong></li>
+                    </ul>
+                </div>
+                <div class="hero-visual">
+                    <!-- Cambia esta imagen por una foto de tu mejor plato (formato vertical recomendado: 800x1000) -->
+                    <img src="images/Logo.jpg" alt="Plato servido en un evento" width="500" height="700">
+                    <span class="sticker sticker-a">Menú a la medida</span>
+                    <span class="sticker sticker-b">Servicio completo</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== SERVICIOS ===== -->
+        <section class="band" id="servicios">
+            <div class="wrap">
+                <div class="section-head">
+                    <h2>Elige cuánto tiempo nos quedamos.</h2>
+                    <p>Los tres paquetes incluyen al equipo de chefs y meseros. Cambia solo la duración del servicio.
+                    </p>
+                </div>
+
+                <div class="plans">
+                    <article class="plan plan-pro">
+                        <span class="plan-badge">El más completo</span>
+                        <h3>Pro</h3>
+                        <p class="plan-time">Todo el evento</p>
+                        <p class="price">1.000<small>USD</small></p>
+                        <ul>
+                            <li>Servicio durante todo el evento, sin límite de horas</li>
+                            <li>Chefs y meseros presentes de principio a fin</li>
+                            <li>Ideal para bodas y celebraciones largas</li>
+                        </ul>
+                        <a class="btn btn-primary" href="#contacto">Reservar Pro</a>
+                    </article>
+
+                    <article class="plan plan-normal">
+                        <h3>Normal</h3>
+                        <p class="plan-time">24 horas</p>
+                        <p class="price">500<small>USD</small></p>
+                        <ul>
+                            <li>Hasta 24 horas de servicio</li>
+                            <li>Chefs y meseros durante todo ese tiempo</li>
+                            <li>Pensado para eventos de uno o dos días</li>
+                        </ul>
+                        <a class="btn btn-light" href="#contacto">Reservar Normal</a>
+                    </article>
+
+                    <article class="plan plan-basico">
+                        <h3>Básico</h3>
+                        <p class="plan-time">12 horas</p>
+                        <p class="price">250<small>USD</small></p>
+                        <ul>
+                            <li>Hasta 12 horas de servicio</li>
+                            <li>Chefs y meseros durante todo ese tiempo</li>
+                            <li>Perfecto para cenas y reuniones privadas</li>
+                        </ul>
+                        <a class="btn btn-light" href="#contacto">Reservar Básico</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== EQUIPO =====
+         Para cambiar una foto: reemplaza el archivo en images/equipo/ con el MISMO nombre
+         (alejandro, valeria, daniel, sofia) o cambia el src de la etiqueta <img>.
+         Formato recomendado: vertical 4:5 (por ejemplo 800x1000 px), JPG, PNG o WebP. -->
+        <section class="band band-team" id="equipo">
+            <div class="wrap">
+                <div class="section-head">
+                    <h2>Cuatro profesionales, una sola mesa.</h2>
+                    <p>Formados en escuelas de referencia de Estados Unidos y con experiencia en restaurantes de la Guía
+                        Michelin.</p>
+                </div>
+
+                <h3 class="group-title">Chefs</h3>
+                <div class="team">
+
+                    <article class="person">
+                        <div class="photo">
+                            <img src="images/equipo/chef2.webp" alt="Foto del chef Alexander Gonzalez" width="600"
+                                height="750" loading="lazy">
+                            <span class="stars" title="Estrellas Michelin">★★ Michelin</span>
+                        </div>
+                        <div class="person-body">
+                            <h4>Chef Alexander Gonzalez</h4>
+                            <p class="role">Chef ejecutivo</p>
+                            <p>Especialista en cocina mediterránea y fuego abierto. Diseña menús de temporada y dirige
+                                la cocina en cada evento.</p>
+                            <p class="school"><b>Formación</b> Culinary Institute of America, Nueva York</p>
+                            <div class="social">
+                                <a href="#" aria-label="Instagram de Alexander Gonzalez">Instagram</a>
+                                <a href="#" aria-label="LinkedIn de Alexander Gonzalez">LinkedIn</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="person">
+                        <div class="photo">
+                            <img src="images/equipo/chef1.webp" alt="Foto de la chef Michelle Tamayo-san" width="600"
+                                height="750" loading="lazy">
+                            <span class="stars" title="Estrellas Michelin">★ Michelin</span>
+                        </div>
+                        <div class="person-body">
+                            <h4>Chef Michelle Tamayo-san</h4>
+                            <p class="role">Chef de cocina y pastelería</p>
+                            <p>Cocina de autor y alta pastelería. Cuida el emplatado, los postres y las propuestas para
+                                dietas especiales.</p>
+                            <p class="school"><b>Formación</b> Institute of Culinary Education, Nueva York</p>
+                            <div class="social">
+                                <a href="#" aria-label="Instagram de Michelle Tamayo-san">Instagram</a>
+                                <a href="#" aria-label="TikTok de Michelle Tamayo-san">TikTok</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <h3 class="group-title">Meseros</h3>
+                <div class="team">
+
+                    <article class="person">
+                        <div class="photo">
+                            <img src="images/equipo/mesero1.webp" alt="Foto del mesero Raymond Ruz" width="600"
+                                height="750" loading="lazy">
+                            <span class="stars" title="Experiencia en restaurantes Michelin">★ Sala Michelin</span>
+                        </div>
+                        <div class="person-body">
+                            <h4>Raymond Ruz</h4>
+                            <p class="role">Mesero y maître</p>
+                            <p>Coordina el servicio en sala, el protocolo de mesa y el maridaje de vinos. Atento a cada
+                                invitado sin interrumpir la conversación.</p>
+                            <p class="school"><b>Formación</b> Cornell University, Hotel Administration</p>
+                            <div class="social">
+                                <a href="#" aria-label="Instagram de Raymond Ruz">Instagram</a>
+                                <a href="#" aria-label="LinkedIn de Raymond Ruz">LinkedIn</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="person">
+                        <div class="photo">
+                            <img src="images/equipo/mesero2.webp" alt="Foto de la mesera Victor Colinario" width="600"
+                                height="750" loading="lazy">
+                            <span class="stars" title="Experiencia en restaurantes Michelin">★ Sala Michelin</span>
+                        </div>
+                        <div class="person-body">
+                            <h4>Victor Colinario</h4>
+                            <p class="role">Mesero y coctelería</p>
+                            <p>Servicio de mesa, barra y coctelería. Se encarga de los tiempos entre platos y de que
+                                nada falte en la mesa.</p>
+                            <p class="school"><b>Formación</b> Johnson &amp; Wales University, Hospitality</p>
+                            <div class="social">
+                                <a href="#" aria-label="Instagram de Victor Colinario">Instagram</a>
+                                <a href="#" aria-label="TikTok de Victor Colinario">TikTok</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== EVENTOS REALIZADOS =====
+         Para usar tus fotos: reemplaza los archivos de images/eventos/ o cambia el src.
+         Formato recomendado: horizontal 4:3 (por ejemplo 1200x900 px).
+         Para agregar más, copia un bloque <button class="shot"> completo. -->
+        <section class="band" id="eventos">
+            <div class="wrap">
+                <div class="section-head">
+                    <h2>Mesas que ya pasaron por nuestras manos.</h2>
+                    <p>Una muestra de bodas, cenas y celebraciones que hemos servido. Toca una foto para verla grande.
+                    </p>
+                </div>
+
+                <div class="gallery">
+                    <button class="shot" type="button" data-full="images/eventos/Boda.webp" data-title="Boda en jardín">
+                        <img src="images/eventos/Boda.webp" alt="Boda en jardín" width="800" height="600"
+                            loading="lazy">
+                        <span>Boda</span>
+                    </button>
+                    <button class="shot" type="button" data-full="images/eventos/Cena de gala.png"
+                        data-title="Cena de gala">
+                        <img src="images/eventos/Cena de gala.png" alt="Cena de gala" width="800" height="600"
+                            loading="lazy">
+                        <span>Cena de gala</span>
+                    </button>
+                    <button class="shot" type="button" data-full="images/eventos/Cumpleaños Privado.png"
+                        data-title="Cumpleaños privado">
+                        <img src="images/eventos/Cumpleaños Privado.png" alt="Cumpleaños privado" width="800"
+                            height="600" loading="lazy">
+                        <span>Cumpleaños privado</span>
+                    </button>
+                    <button class="shot" type="button" data-full="images/eventos/evento_corporativo.jfif"
+                        data-title="Evento corporativo">
+                        <img src="images/eventos/evento_corporativo.jfif" alt="Evento corporativo" width="800"
+                            height="600" loading="lazy">
+                        <span>Evento corporativo</span>
+                    </button>
+                    <button class="shot" type="button" data-full="images/eventos/celebraciones.jfif"
+                        data-title="Brunch familiar">
+                        <img src="images/eventos/celebraciones.jfif" alt="Brunch familiar" width="800" height="600"
+                            loading="lazy">
+                        <span>Brunch familiar</span>
+                    </button>
+                    <button class="shot" type="button" data-full="images/eventos/aniversario.jfif"
+                        data-title="Aniversario">
+                        <img src="images/eventos/aniversario.jfif" alt="Aniversario" width="800" height="600"
+                            loading="lazy">
+                        <span>Aniversario</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== CONTACTO ===== -->
+        <section class="band" id="contacto">
+            <div class="wrap">
+                <div class="contact-card">
+                    <div class="contact-copy">
+                        <h2>Cuéntanos la fecha de tu evento.</h2>
+                        <p>Escríbenos con la fecha, el lugar y el número de invitados. Te respondemos con la
+                            disponibilidad y el paquete que mejor encaja.</p>
+                    </div>
+                    <!-- Reemplaza estos datos por los reales -->
+                    <ul class="contact-list">
+                        <li><b>Correo</b><span>reservas@sazonymesa.com</span></li>
+                        <li><b>WhatsApp</b><span>+58 424 675 2119</span></li>
+                        <li><b>Instagram</b><span>@sazonymesa</span></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== TÉRMINOS Y CONDICIONES ===== -->
+        <section class="band band-legal" id="terminos">
+            <div class="wrap">
+                <div class="section-head">
+                    <h2>Términos y condiciones</h2>
+                    <p class="updated">Última actualización: noviembre de 2026</p>
+                </div>
+                <div class="legal">
+                    <details open>
+                        <summary>1. Servicios y precios</summary>
+                        <p>Ofrecemos tres paquetes de servicio de chefs y meseros a domicilio: Pro (durante todo el
+                            evento, 1.000 USD), Normal (hasta 24 horas, 500 USD) y Básico (hasta 12 horas, 250 USD). Los
+                            precios están expresados en dólares estadounidenses.</p>
+                    </details>
+                    <details>
+                        <summary>2. Reservas</summary>
+                        <p>La fecha queda reservada cuando ambas partes confirman por escrito el paquete, la fecha, el
+                            lugar y el número aproximado de invitados. Sin esa confirmación no podemos garantizar
+                            disponibilidad.</p>
+                    </details>
+                    <details>
+                        <summary>3. Pagos y cancelaciones</summary>
+                        <p>El anticipo, las fechas de pago y las condiciones de reembolso por cancelación se acuerdan
+                            por escrito al confirmar la reserva. Los cambios de fecha dependen de la disponibilidad del
+                            equipo.</p>
+                    </details>
+                    <details>
+                        <summary>4. Lugar del evento y cocina</summary>
+                        <p>El cliente debe asegurar el acceso al lugar, a una cocina o zona de preparación, y a
+                            electricidad y agua. Si el espacio tiene limitaciones, debe informarlo antes del evento para
+                            ajustar el servicio.</p>
+                    </details>
+                    <details>
+                        <summary>5. Alergias y restricciones alimentarias</summary>
+                        <p>El cliente debe avisar con anticipación sobre alergias, intolerancias y dietas especiales de
+                            los invitados. Con esa información adaptamos el menú y la preparación.</p>
+                    </details>
+                    <details>
+                        <summary>6. Responsabilidad</summary>
+                        <p>Cuidamos el espacio y los equipos que utilizamos. No somos responsables de objetos personales
+                            de los invitados ni de daños causados por terceros durante el evento.</p>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== POLÍTICA DE PRIVACIDAD ===== -->
+        <section class="band band-legal" id="privacidad">
+            <div class="wrap">
+                <div class="section-head">
+                    <h2>Política de privacidad</h2>
+                    <p class="updated">Última actualización: noviembre de 2026</p>
+                </div>
+                <div class="legal">
+                    <details open>
+                        <summary>Datos que recopilamos</summary>
+                        <p>Recopilamos los datos que nos envías para cotizar y organizar tu evento: nombre, medio de
+                            contacto, fecha, lugar, número de invitados y restricciones alimentarias.</p>
+                    </details>
+                    <details>
+                        <summary>Para qué los usamos</summary>
+                        <p>Usamos tus datos para responder tu solicitud, preparar el menú, coordinar al equipo y
+                            gestionar los pagos de tu reserva. No los usamos para otros fines sin tu permiso.</p>
+                    </details>
+                    <details>
+                        <summary>Con quién los compartimos</summary>
+                        <p>No vendemos tus datos. Solo compartimos la información necesaria con proveedores que
+                            participan en tu evento, por ejemplo de ingredientes o transporte, y cuando la ley lo exija.
+                        </p>
+                    </details>
+                    <details>
+                        <summary>Cuánto tiempo los conservamos</summary>
+                        <p>Conservamos tus datos mientras dure la relación de servicio y el tiempo necesario para
+                            cumplir obligaciones legales y contables. Después los eliminamos.</p>
+                    </details>
+                    <details>
+                        <summary>Tus derechos</summary>
+                        <p>Puedes pedirnos acceso, corrección o eliminación de tus datos en cualquier momento
+                            escribiendo a nuestro correo de contacto.</p>
+                    </details>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="wrap footer-row">
+            <span>© <span id="year">2026</span> Sazón &amp; Mesa. Todos los derechos reservados.</span>
+            <nav aria-label="Pie de página">
+                <a href="#terminos">Términos y condiciones</a>
+                <a href="#privacidad">Política de privacidad</a>
+            </nav>
+        </div>
+    </footer>
+
+    <!-- Ventana para ver las fotos de eventos en grande -->
+    <dialog class="lightbox" id="lightbox" aria-label="Foto del evento">
+        <button class="lightbox-close" id="lightbox-close" type="button" aria-label="Cerrar">&times;</button>
+        <img id="lightbox-img" src="" alt="">
+        <p id="lightbox-title"></p>
+    </dialog>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
