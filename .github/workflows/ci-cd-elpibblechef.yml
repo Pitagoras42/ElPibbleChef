@@ -1,0 +1,54 @@
+name: CI y CD - El Pibble Chef
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  validar:
+    name: Validar el proyecto
+    runs-on: ubuntu-latest
+    steps:
+      - name: Descargar el codigo del repositorio
+        uses: actions/checkout@v6
+
+      - name: Comprobar que existen los archivos principales
+        run: |
+          test -f index.html
+          test -f styles.css
+          test -f main.js
+
+      - name: Comprobar la sintaxis de JavaScript
+        run: node --check main.js
+
+  publicar:
+    name: Publicar en GitHub Pages
+    needs: validar
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Descargar el codigo del repositorio
+        uses: actions/checkout@v6
+
+      - name: Configurar GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Preparar los archivos del sitio
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: .
+
+      - name: Desplegar el sitio web
+        id: deployment
+        uses: actions/deploy-pages@v4
