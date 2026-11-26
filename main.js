@@ -1,4 +1,4 @@
-/* SAZÓN & MESA — comportamiento de la página */
+/* El Pibble Chef — comportamiento de la página */
 (function () {
     'use strict';
 
